@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css'
+import './App.scss'
 import { fetchImages } from './services/imageService';
 import type { ImageResponse } from './types/image';
 import { Carousel } from './components/carousel';
