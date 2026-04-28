@@ -1,3 +1,11 @@
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #121212;
 }
@@ -9,8 +17,18 @@ h1 {
   margin-bottom: 2rem;
   text-align: center;
 
-  background: linear-gradient(to right, #ffffff, #00d2ff);
+  background: linear-gradient(to right, #ffffff, $primary);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.app-container {
+  padding-top: 40px;
+}
+
+.error-message {
+  color: $error;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
